@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Joe.png" type="image">
+    <title>Managing CSS Varibles with JS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Managing CSS Variables with <span class="highlighted">JS</span></h2>
+        <div class="mainContent flex">
+            <div class="controls">
+
+                <label for="containerWidth" class="highlighted containerWidth">Container Width  <span class="value"></span>Pixels</label>
+                <input type="range" name="containerWidth" id="containerWidth" min="400" max="1500" value = "1200">
+
+                <label for="spacing" class="highlighted spacing">Spacing <span class="value"></span>Pixels</label>
+                <input type="range" name="spacing" id="spacing" min="25" max="100" value="20">
+
+                <label for="blur" class="highlighted blur">blur <span class="value"></span></label>
+                <input type="range" name="blur" id="blur" min="0" max="5" value="0" step="0.1">
+
+                <div class="colors flex">
+                    <div class="w-33">
+                        <label for="bgColor" class="highlighted bgColor">Background Color Code  <span class="value"></span></label>
+                        <input type="color" name="bgColor" id="bgColor" value="#193549" value = "#193549">
+                    </div>
+
+                    <div class="w-33">
+                            <label for="textColor" class="highlighted textColor">Text  Color Code  <span class="value"></span></label>
+                            <input type="color" name="textColor" id="textColor" value="#ffffff">
+                    </div>
+                    <div class="w-33">
+                            <label for="heighlightColor" class="highlighted themeColor">Highlight  Color Code <span class="value"></span></label>
+                            <input type="color" name="themeColor" id="themeColor" value="#ffff00">
+                    </div>
+            </div>
+
+            </div>
+        <div class="img">
+            <img src="img/body_bg.jpg">
+        </div>
+    </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
