@@ -27,8 +27,7 @@ function handleUpdate(){
     const inputValue = input.value
     valueSpan.innerHTML = inputValue
     document.querySelector(':root').style.setProperty(`--${input.name}`, inputValue)
-    console.log(input)
-    console.log(inputValue)
+
 }
 
 
